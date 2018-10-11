@@ -20,14 +20,14 @@ export default class Task extends Component {
                             <label>I want to...</label>
                         </div>
                         <div>
-                            <textarea name='description' className='form-control create-todo-text' type='text' placeholder='add task' onChange={this.props.changeValues}/>
+                            <textarea name='description' className='form-control create-todo-text' type='ITEM' placeholder='add task' onChange={this.props.changeValues}/>
                         </div>
                         <div>
                             <label style={{paddingTop:'10px'}}>How much of a priority is this?</label>
                         </div>
                         <div className='custom-select'>
                             <select name='priority' className='form-control create-todo-priority' onChange={this.props.changeValues}>
-                                <option style={{color:'red'}}value='High'>High</option>
+                                <option value='High'>High</option>
                                 <option value='Medium'>Medium</option>
                                 <option value='Low'>Low</option>
                             </select>

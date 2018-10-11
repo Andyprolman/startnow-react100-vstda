@@ -83,6 +83,7 @@ class App extends Component {
     this.setState({
       items: newItems,
       index: index,
+      priority: 'High'
       
     })
   }
@@ -108,7 +109,7 @@ class App extends Component {
         color = 'green'
       
     }
-    
+
     const newItems = [...this.state.items];
     const editedItem = {
       description: this.state.description,

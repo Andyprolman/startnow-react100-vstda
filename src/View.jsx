@@ -54,16 +54,16 @@ export default class View extends Component {
                             <p>Get started now by adding a new to-do on the left.</p>
                         </div>
                         : this.props.items.map(item =>(
-                            <div  key={item.id} className='well' style={item.color}>
+                            <div key={item.id} className='well success' style={item.color}>
                                 
-                                {!item.isEditing ? <div  className='row'>
+                                {!item.isEditing ? <div  className='row success'>
                                     <div className='col-md-1'>
                                         <input className='form-control' type='checkbox' style={{height:'15px', width:'15px'}}/>
                                     </div>
-                                    <div className='col-md-4'>
+                                    <div className='col-md-4 success'>
                                         <h5>{item.description}</h5>
                                     </div>
-                                    <div className='col-md-3'>
+                                    <div className='col-md-3 success'>
                                         <h5>{item.priority}</h5>
                                     </div>
                                     <div className='col-md-2'>
